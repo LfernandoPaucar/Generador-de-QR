@@ -13,15 +13,18 @@
 
 <body>
     <main class="container-general">
-        <section class="generador-container">
+        <section id="generador-container">
             <div class="img">
-                <img src="/source/logo-qr-generator.svg" alt="#">
+                <img src="/source/logo-qr-generator.svg" alt="Logo QR Generator">
             </div>
             <div class="section-usuario">
-                <input class="generar" type="text" placeholder="Inserte url"><button><input class="qr" type="submit" value="QR code"></button>
+                <input id="url-enlace" type="text" placeholder="Inserta una URL">
+                <button id="btn-generator" type="submit">
+                    Generar QR</button>
             </div>
         </section>
     </main>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
