@@ -1,23 +1,7 @@
-const inputUrl = document.getElementById('url-enlace');
-const btnGenerar = document.getElementById('btn-generator');
 const containerQr = document.querySelector('.qr-generado');
 const backBtn = document.getElementById('btn-regresar');
 
-btnGenerar.addEventListener('click', (e) => {
-    e.preventDefault();
 
-    const url = inputUrl.value.trim();
-
-    if (url){
-        const encodedUrl = encodeURIComponent(url);
-
-        const resultPageUrl = `./../pages/generador-de-codigo.html?data=${encodedUrl}`;
-
-        globalThis.location.href = resultPageUrl
-    } else {
-        alert('Por favor ingresa una URL válida.');
-    }
-});
 
 function getUrlDataFromQuery(){
 
@@ -42,7 +26,7 @@ function initQRGenerator(){
     }
 };
 
-window.onload = initQRGenerator;
+document.addEventListener('DOMContentLoaded', initQRGenerator);
 
 backBtn.addEventListener('click', (e) => {
     globalThis.location.href = "index.html";
