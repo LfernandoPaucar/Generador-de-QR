@@ -108,6 +108,8 @@ body{
     }
 }
 
+
+
 .container-2{
     display: flex;
     flex-direction: column;
@@ -148,7 +150,7 @@ body{
                     width: 250px;
                     height: 250px;
                     padding: 10px;
-                }
+                    }
                 }
             }
         }
@@ -170,3 +172,54 @@ body{
     }
 }
 
+
+@media (max-width: 768px){
+    body{
+        overflow: hidden;
+        width: 768px;
+        .container-general{
+                padding:5%;
+                height: 100vh;
+                background-size: 50%;
+                background-position: 50% 20px;
+                max-width: auto;
+                .img{
+                    img{
+                        width: 25vw;
+                    }
+                }
+                .section-usuario{
+                    width: 70vw;
+                    height: 10vh;
+                    button{
+                        width: 20vw;
+                    }
+                }
+            }
+    }
+}
+@media (max-width: 768px){
+    body{
+        overflow: hidden;
+        .container-2{
+            padding: 5%;
+            .logo-aplication{
+                img{
+                    width: 25vw;
+                }
+            }
+            .container-qr{
+                .generador{
+                    .container-qr-2{
+                        .qr-generado{
+                            img{
+                                width:200px;
+                                height: 200px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        }
+}
