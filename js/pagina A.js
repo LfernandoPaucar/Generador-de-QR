@@ -9,7 +9,7 @@ btnGenerar.addEventListener('click', (e) => {
     if (url){
         const encodedUrl = encodeURIComponent(url);
 
-        const resultPageUrl = `./../pages/generador-de-codigo.html?data=${encodedUrl}`;
+        const resultPageUrl = `pages/generador-de-codigo.html?data=${encodedUrl}`;
 
         globalThis.location.href = resultPageUrl
     } else {
