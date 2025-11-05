@@ -77,37 +77,6 @@ body{
 }
 
 
-@media screen and (max-width: 640px){
-    html{
-        height: 100%;
-        .container-general{
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            background-size: 90%;
-            background-position: 320px 20px;
-            box-sizing: border-box;
-            padding: 2%;
-            justify-content: center;
-            .generador-container{
-                width: 100vw;
-                .img{
-                    img{
-                        width: 30vw;
-                    }
-                }
-                .section-usuario{
-                    width: 90vw;
-                    height: 10vh;
-                    button{
-                        width: 15vw;
-                    }
-                }
-            }
-        }
-    }
-}
-
 
 
 .container-2{
@@ -176,21 +145,20 @@ body{
 @media (max-width: 768px){
     body{
         overflow: hidden;
-        width: 768px;
         .container-general{
                 padding:5%;
                 height: 100vh;
                 background-size: 50%;
                 background-position: 50% 20px;
-                max-width: auto;
                 .img{
                     img{
-                        width: 25vw;
+                        width: 35vw;
                     }
                 }
                 .section-usuario{
-                    width: 70vw;
+                    width: 80vw;
                     height: 10vh;
+                    font-size: x-large;
                     button{
                         width: 20vw;
                     }
@@ -202,10 +170,14 @@ body{
     body{
         overflow: hidden;
         .container-2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             padding: 5%;
+            background-position: 50% 20px;
             .logo-aplication{
                 img{
-                    width: 25vw;
+                    width: 35vw;
                 }
             }
             .container-qr{
@@ -218,6 +190,50 @@ body{
                             }
                         }
                     }
+                }
+            }
+            .regreso{
+                a{
+                    padding: 20px;
+                    font-size: x-large;
+                }
+            }
+        }
+        }
+}
+
+@media (max-width: 576px){
+    body{
+        overflow: hidden;
+        .container-general{
+            padding: 0%;
+                .img{
+                    margin-bottom: 40px;
+                    img{
+                        width: 40vw;
+                    }
+                }
+                .section-usuario{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                background-color: transparent;
+                gap: 10px;
+                #url-enlace{
+                    width: 70vw;
+                    height: 8vh;
+                    margin-bottom: 10px;
+                    border: solid 2px #3662E3;
+                    border-radius: 10px;
+                    padding: 30px;
+                    }
+                #btn-generator{
+                    text-align: center;
+                    width: 30vw;
+                    height: 6vh;
+                    padding: 20px;
                 }
             }
         }
